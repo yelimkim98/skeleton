@@ -1,0 +1,5 @@
+rootProject.name = 'skeleton'
+
+include 'skeleton-api'
+include 'skeleton-batch'
+include 'skeleton-core'
