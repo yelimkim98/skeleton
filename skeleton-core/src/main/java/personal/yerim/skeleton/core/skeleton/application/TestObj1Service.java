@@ -1,13 +1,13 @@
-package personal.yerim.skeleton.core.application.service;
+package personal.yerim.skeleton.core.skeleton.application;
 
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import personal.yerim.skeleton.core.application.service.dto.CursorPageResult;
-import personal.yerim.skeleton.core.application.service.dto.TestObj1CreateDto;
-import personal.yerim.skeleton.core.application.service.dto.CursorCreatedAtPageRequest;
-import personal.yerim.skeleton.core.domain.TestObj1;
-import personal.yerim.skeleton.core.domain.TestObj1Repository;
+import personal.yerim.skeleton.core.skeleton.application.dto.CursorCreatedAtPageRequest;
+import personal.yerim.skeleton.core.skeleton.application.dto.CursorPageResult;
+import personal.yerim.skeleton.core.skeleton.application.dto.TestObj1CreateDto;
+import personal.yerim.skeleton.core.skeleton.domain.TestObj1;
+import personal.yerim.skeleton.core.skeleton.domain.TestObj1Repository;
 
 @Service
 @RequiredArgsConstructor

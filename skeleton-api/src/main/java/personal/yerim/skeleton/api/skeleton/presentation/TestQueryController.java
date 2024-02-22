@@ -1,23 +1,25 @@
-package personal.yerim.skeleton.api.presentation;
+package personal.yerim.skeleton.api.skeleton.presentation;
 
 import java.time.ZonedDateTime;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import personal.yerim.skeleton.api.application.TestQueryService;
-import personal.yerim.skeleton.api.presentation.dto.TestResponse;
-import personal.yerim.skeleton.core.application.service.dto.CursorCreatedAtPageRequest;
-import personal.yerim.skeleton.core.application.service.dto.CursorPageResult;
+import personal.yerim.skeleton.api.skeleton.application.TestQueryService;
+import personal.yerim.skeleton.api.skeleton.presentation.dto.TestResponse;
+import personal.yerim.skeleton.core.skeleton.application.dto.CursorCreatedAtPageRequest;
+import personal.yerim.skeleton.core.skeleton.application.dto.CursorPageResult;
 
 @RestController
+@RequestMapping("/api/v1/skeleton")
 @RequiredArgsConstructor
 public class TestQueryController {
 
   private final TestQueryService testQueryService;
 
-  @GetMapping("/api/v1/tests")
+  @GetMapping("/tests")
   public ResponseEntity<CursorPageResult<TestResponse>> getTestResponses(
       @RequestParam(required = false) ZonedDateTime lastCreatedAt,
       @RequestParam(required = false) Long lastId,

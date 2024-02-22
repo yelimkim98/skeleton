@@ -1,4 +1,4 @@
-package personal.yerim.skeleton.core.application.service.dto;
+package personal.yerim.skeleton.core.skeleton.application.dto;
 
 import java.time.ZonedDateTime;
 import lombok.Builder;

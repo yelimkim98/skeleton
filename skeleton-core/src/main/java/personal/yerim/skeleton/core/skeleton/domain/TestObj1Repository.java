@@ -1,4 +1,4 @@
-package personal.yerim.skeleton.core.domain;
+package personal.yerim.skeleton.core.skeleton.domain;
 
 import java.time.ZonedDateTime;
 import java.util.ArrayList;

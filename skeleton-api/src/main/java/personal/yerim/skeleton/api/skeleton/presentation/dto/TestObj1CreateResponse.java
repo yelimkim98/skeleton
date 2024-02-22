@@ -1,4 +1,4 @@
-package personal.yerim.skeleton.api.presentation.dto;
+package personal.yerim.skeleton.api.skeleton.presentation.dto;
 
 import lombok.Builder;
 import lombok.Getter;

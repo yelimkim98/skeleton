@@ -1,9 +1,9 @@
-package personal.yerim.skeleton.api.application;
+package personal.yerim.skeleton.api.skeleton.application;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import personal.yerim.skeleton.core.application.service.TestObj1Service;
-import personal.yerim.skeleton.core.application.service.dto.TestObj1CreateDto;
+import personal.yerim.skeleton.core.skeleton.application.TestObj1Service;
+import personal.yerim.skeleton.core.skeleton.application.dto.TestObj1CreateDto;
 
 @Service
 @RequiredArgsConstructor
