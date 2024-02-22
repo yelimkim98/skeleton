@@ -14,7 +14,7 @@ public class TestObj1Repository {
   private final List<TestObj1> list = new ArrayList<>();
 
   public Long generateId() {
-    return (long) list.size();
+    return (long) list.size() + 1;
   }
 
   public TestObj1 save(TestObj1 testObj1) {
