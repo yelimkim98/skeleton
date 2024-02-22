@@ -1,5 +1,6 @@
-server:
-  port: 8080
+spring:
+  config:
+    import: application-core.yaml
 springdoc:
   swagger-ui:
     path: '/swagger-ui.html'
