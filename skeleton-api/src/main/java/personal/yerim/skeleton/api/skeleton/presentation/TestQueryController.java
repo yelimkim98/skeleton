@@ -3,6 +3,7 @@ package personal.yerim.skeleton.api.skeleton.presentation;
 import io.swagger.v3.oas.annotations.Parameter;
 import java.time.ZonedDateTime;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -16,6 +17,7 @@ import personal.yerim.skeleton.core.skeleton.application.dto.CursorCreatedAtPage
 import personal.yerim.skeleton.core.skeleton.application.dto.CursorPageResult;
 import personal.yerim.skeleton.core.skeleton.application.dto.WebClientTestResponse;
 
+@Slf4j
 @RestController
 @RequestMapping("/api/v1/skeleton")
 @RequiredArgsConstructor
@@ -31,7 +33,7 @@ public class TestQueryController {
       @RequestParam(required = false) Long lastId,
       @RequestParam(defaultValue = "20") int pageSize
   ) {
-    System.out.println("## tester : " + tester);
+    log.debug("## tester : {}", tester);
     CursorCreatedAtPageRequest request = CursorCreatedAtPageRequest.builder()
         .lastCreatedAt(lastCreatedAt)
         .lastId(lastId)

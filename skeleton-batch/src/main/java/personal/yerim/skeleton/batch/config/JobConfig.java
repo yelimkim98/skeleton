@@ -1,5 +1,6 @@
 package personal.yerim.skeleton.batch.config;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.job.builder.JobBuilder;
@@ -12,6 +13,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.PlatformTransactionManager;
 
+@Slf4j
 @Configuration
 public class JobConfig {
 
@@ -38,7 +40,7 @@ public class JobConfig {
   @Bean
   public Tasklet testTasklet() {
     return (contribution, chunkContext) -> {
-      System.out.println("## test batch executed");
+      log.debug("## test batch tasklet executed");
       return RepeatStatus.FINISHED;
     };
   }

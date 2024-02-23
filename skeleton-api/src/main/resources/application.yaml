@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: skeleton-api
   profiles:
     default: dev
   config:
