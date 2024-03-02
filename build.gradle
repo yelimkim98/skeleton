@@ -50,12 +50,14 @@ subprojects {
 }
 
 project(':skeleton-api') {
+    jar { enabled = false }
     dependencies {
         implementation project(':skeleton-core')
     }
 }
 
 project(':skeleton-batch') {
+    jar { enabled = false }
     dependencies {
         implementation project(':skeleton-core')
     }
