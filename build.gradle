@@ -5,6 +5,7 @@ plugins {
     id 'org.springframework.boot' version '3.2.2'
 }
 
+jar { enabled = false }
 bootJar { enabled = false }
 
 repositories {
